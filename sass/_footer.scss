@@ -1,33 +1,39 @@
 .footer{
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 18px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 32px;
     letter-spacing: 1px;
-    text-align: center;
     list-style: none;
-    color: #fff;
-    background-color:#091528; 
+    padding: 2rem;
+    color: #B8B8B8;
+    background-color:#0C0C0C; 
+ 
 
     &__wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
+           // MEDIA QUERIES
+    @include respond(tab-port){
+        width: 100%;
+    }
     }
     &__figure{
         display: flex;
         flex: 0 0 100%;
-        justify-content: center;
-        padding: 1rem 0;
+        // justify-content: center;
+        padding-top: 4rem;
         &__logo{
-            width: 220px;
+            width: 150px;
             height: 100%;
         }
     }
     // FIRST COLUMN
     &__first__list{
         list-style: inherit;
+        flex: 0 0 14%;
         // MEDIA QUERIES
         @include respond(phone){
             margin-right: 2rem;
@@ -39,8 +45,10 @@
         &__items{
             margin-top: 5px;
             &:first-child{
-                font-size: 13px;
+                font-size: 28px;
+                font-weight: 100;
                 margin-bottom: 15px;
+                color: #fff;
             }
         }
         
@@ -49,6 +57,7 @@
     // SECOND COLUMN
     &__second__list{
         list-style: inherit;
+        flex: 0 0 14%;
            // MEDIA QUERIES
            @include respond(phone){
             margin-right: 2rem;
@@ -60,14 +69,18 @@
         &__items{
             margin-top: 5px;
             &:first-child{
-                font-size: 13px;
+                font-size: 28px;
+                font-weight: 100;
                 margin-bottom: 15px;
+                color: #fff;
+
             }
         }
     }
     // THIRD COLUMN
     &__third__list{
         list-style: inherit;
+        flex: 0 0 14%;
    // MEDIA QUERIES
    @include respond(phone){
     margin-right: 2rem;
@@ -79,25 +92,37 @@
     &__items{
             margin-top: 5px;
             &:first-child{
-             font-size: 13px;
+                font-size: 28px;
+                font-weight: 100;
              margin-bottom: 15px;
+             color: #fff;
+
             }
         }
     }
     // FOURTH COLUMN
     &__fourth__list{
         list-style: inherit;
+        flex: 0 0 14%;
         @include respond(small-phone){
             flex: 0 0 50%;
             margin: 0 0 1rem 0;
         }
         &__items{
             margin-top: 5px;
+            &:first-child{
+                font-size: 28px;
+                font-weight: 100;
+                margin-bottom: 15px;
+                color: #fff;
+   
+               }
         }
     }
     // FIFHT COLUMN
     &__fifth__list{
         list-style: inherit;
+        flex: 0 0 14%;
            // MEDIA QUERIES
            @include respond(phone){
             margin-left: 2rem;
@@ -109,14 +134,18 @@
         &__items{
             margin-top: 5px;
             &:first-child{
-                font-size: 13px;
+                font-size: 28px;
+                font-weight: 100;
                 margin-bottom: 15px;
+                color: #fff;
+
             }
         }
     }
     // SIXTH COLUMN
     &__sixth__list{
         list-style: inherit;
+        flex: 0 0 14%;
         @include respond(small-phone){
             flex: 0 0 50%;
             margin: 0 0 1rem 0;
@@ -125,8 +154,11 @@
         &__items{
             margin-top: 5px;
             &:first-child{
-                font-size: 13px;
+                font-size: 28px;
+                font-weight: 100;
                 margin-bottom: 15px;
+                color: #fff;
+
             }
 
         }
@@ -134,6 +166,7 @@
     // SEVENTH COLUMN
     &__seventh__list{
         list-style: inherit;
+        flex: 0 0 14%;
         @include respond(small-phone){
             flex: 0 0 50%;
             margin: 0 0 1rem 0;
@@ -141,8 +174,11 @@
         &__items{
             margin-top: 5px;
             &:first-child{
-                font-size: 13px;
+                font-size: 28px;
+                font-weight: 100;
                 margin-bottom: 15px;
+                color: #fff;
+
             }
             
         }
@@ -150,6 +186,7 @@
     // EIGHTH COLUMN
     &__eighth__list{
         list-style: inherit;
+        flex: 0 0 14%;
         @include respond(small-phone){
             flex: 0 0 50%;
             margin-right: 0;
@@ -157,22 +194,137 @@
         &__items{
             margin-top: 5px;
             &:first-child{
-                font-size: 13px;
+                font-size: 28px;
+                font-weight: 100;
                 margin-bottom: 15px;
+                color: #fff;
+
+            }
+        }
+    }
+    // NINETH COLUMN
+    &__nineth__list{
+        list-style: inherit;
+        flex: 0 0 14%;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+        }
+        &__items{
+            margin-top: 5px;
+            &:first-child{
+                font-size: 28px;
+                font-weight: 100;
+                margin-bottom: 15px;
+                color: #fff;
+
+            }
+        }
+    }
+    // TENTH COLUMN
+    &__tenth__list{
+        list-style: inherit;
+        flex: 0 0 14%;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+        }
+        &__items{
+            margin-top: 5px;
+            &:first-child{
+                font-size: 28px;
+                font-weight: 100;
+                margin-bottom: 15px;
+                color: #fff;
+
+            }
+        }
+    }
+    // ELEVENTH COLUMN
+    &__eleventh__list{
+        list-style: inherit;
+        flex: 0 0 14%;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+        }
+        &__items{
+            margin-top: 5px;
+            &:first-child{
+                font-size: 28px;
+                font-weight: 100;
+                margin-bottom: 15px;
+                color: #fff;
+
+            }
+        }
+    }
+    // TWELVETH COLUMN
+    &__twelveth__list{
+        list-style: inherit;
+        flex: 0 0 14%;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+        }
+        &__items{
+            margin-top: 5px;
+            &:first-child{
+                font-size: 28px;
+                font-weight: 100;
+                margin-bottom: 15px;
+                color: #fff;
+
+            }
+        }
+    }
+    // THIRTEENTH COLUMN
+    &__thirteenth__list{
+        list-style: inherit;
+        flex: 0 0 14%;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+        }
+        &__items{
+            margin-top: 5px;
+            &:first-child{
+                font-size: 28px;
+                font-weight: 100;
+                margin-bottom: 15px;
+                color: #fff;
+
+            }
+        }
+    }
+    // FOURTEENTH COLUMN
+    &__fourteenth__list{
+        list-style: inherit;
+        flex: 0 0 14%;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+        }
+        &__items{
+            margin-top: 5px;
+            &:first-child{
+                font-size: 28px;
+                font-weight: 100;
+                margin-bottom: 15px;
+                color: #fff;
+
             }
         }
     }
     // COPYRIGHT CONTAINER
     &__legal-wrapper{
         flex: 0 0 100%;
-        font-weight: 300;
-        text-align: center;
-        margin: 2rem;
+        font-weight: 800;
         padding-top: 1rem;
         list-style: inherit;
-        border-top: 1px solid #686C73;
+        color:  #595959;
         &__text{
-            margin-top: 5px;
+            margin-top: 1rem;
         }
     }
 }

@@ -6,7 +6,16 @@
     font-size: 16px;
     line-height: 15px;
     letter-spacing: 1px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #000;
+    // MEDIA QUERIES
+    @include respond(small-phone){
+        justify-content: space-between;
+
+    }
 
     &__logo{
         &__img{
@@ -22,6 +31,10 @@
         &__items{
             padding: 0 10px;
         }
+        // MEDIA QUERIES
+        @include respond(small-phone){
+            display: none;
+        }
     }
     &__menu-right{
         display: flex;
@@ -31,20 +44,35 @@
             display: flex;
             align-items: center;
             padding: 0 5px;
+            
 
             &__more{
+                
                 width: 10px;
                 height: 10px;
                 margin-left: 5px;
+                // MEDIA QUERIES
+                @include respond(small-phone){
+                    display: none;
+                }
             }
             &__search{
                 width: 30px;
                 height: 30px;
                 margin: 0 3px;
+                // MEDIA QUERIES
+                @include respond(small-phone){
+                    display: none;
+                }
             }
             &__menu{
                 width: 23px;
                 height: 17px;
+                // MEDIA QUERIES
+                @include respond(small-phone){
+                    margin-right: .6rem;
+                }
+                
             }
         }
 

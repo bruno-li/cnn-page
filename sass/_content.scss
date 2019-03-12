@@ -6,6 +6,7 @@
   // MEDIA QUERIES
   @include respond(tab-port){
     width: 100%;
+    padding: 2rem;
   }
   @include respond(small-phone){
     padding: 8px;
@@ -28,6 +29,7 @@
           @include respond(small-phone){
             font-size: 23px;
             line-height: 28px;
+            margin-top: 3.5rem;
           }
         
           // AUTHOR
